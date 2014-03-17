@@ -76,15 +76,18 @@ p {
 .window {
   position: relative;
   height: 300px;
+  background:black;
   overflow:hidden;
 }
 
 #sky {
   height: 300px;
-  background:black url(img/stars.jpg) no-repeat;
+  background: url(img/stars.jpg) no-repeat;
+  animation: spin 60s linear infinite;
 }
 
- #sky:hover {  
-  transition: transform 60s linear 0s;
-  transform: rotate(360deg);
+@keyframes spin {
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(180deg);}
+  100% {transform: rotate(360deg);}
 }
