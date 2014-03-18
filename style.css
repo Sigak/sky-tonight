@@ -75,19 +75,28 @@ p {
 
 .window {
   position: relative;
-  height: 300px;
+  height: 719px;
   background:black;
   overflow:hidden;
 }
 
 #sky {
-  height: 300px;
-  background: url(img/stars.jpg) no-repeat;
-  animation: spin 60s linear infinite;
+  position: relative;
+  top: -600px;
+  left: -280px;
+  animation: spin 180s linear infinite;
 }
 
 @keyframes spin {
   0% {transform: rotate(0deg);}
   50% {transform: rotate(180deg);}
   100% {transform: rotate(360deg);}
+}
+
+.border {
+  position: absolute;
+  height: 119px;
+  width: 1040px;
+  bottom: 0;
+  background:url(img/border.jpg) no-repeat;
 }
