@@ -82,8 +82,8 @@ p {
 
 #sky {
   position: relative;
-  top: -600px;
-  left: -280px;
+  top: -401px;
+  left: -81px;
   animation: spin 180s linear infinite;
 }
 
