@@ -75,15 +75,16 @@ p {
 
 .window {
   position: relative;
-  height: 719px;
+  height: 600px;
+  width: 800px;
   background:black;
   overflow:hidden;
 }
 
 #sky {
   position: relative;
-  top: -401px;
-  left: -81px;
+  top: -305px;
+  left: -74px;
   animation: spin 180s linear infinite;
 }
 
@@ -95,8 +96,8 @@ p {
 
 .border {
   position: absolute;
-  height: 119px;
-  width: 1040px;
+  height: 92px;
+  width: 800px;
   bottom: 0;
   background:url(img/border.jpg) no-repeat;
 }
