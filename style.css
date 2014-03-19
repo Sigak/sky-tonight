@@ -101,3 +101,13 @@ p {
   bottom: 0;
   background:url(img/border.jpg) no-repeat;
 }
+
+#moon {
+  position: absolute;  
+  top: 462px; 
+  left: 388px; 
+  height: 25px; 
+  width: 25px; 
+  background-color: red;
+  z-index: 1000;
+}
