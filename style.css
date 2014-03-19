@@ -83,8 +83,10 @@ p {
 
 #sky {
   position: relative;
-  top: -305px;
-  left: -74px;
+  top: -356px;
+  left: -125px;
+  height: 1050px;
+  width: 1050px;
   animation: spin 180s linear infinite;
 }
 
@@ -104,10 +106,9 @@ p {
 
 #moon {
   position: absolute;  
-  top: 462px; 
-  left: 388px; 
-  height: 25px; 
-  width: 25px; 
+  top: 5px; 
+  left: 513px; 
+  height: 24px; 
+  width: 24px; 
   background-color: red;
-  z-index: 1000;
 }
