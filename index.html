@@ -18,16 +18,18 @@
   </header>
   <div id="content">
         <div class="window">
+		<div id="sky">
 		    <div id="moon"></div>
-			<img src="img/stars.jpg" id="sky"></img>
+			<img src="img/stars.jpg"></img>
+		</div>
 			<div class="border"></div>
 		</div>
     
   </div>
   <script>
       
-      var ZERO = new Date(2008, 7, 1);
-      var time = (new Date - ZERO)/86400000 ^ 0;
+      var ZERO = new Date(2008, 7, 2);
+      var time = (new Date() - ZERO)/86400000 ^ 0;
       var moon = {
         r: 633,
         period: 29.5,
@@ -35,14 +37,14 @@
         img: document.getElementById("moon"),
       }
       
-     getXY(time, moon);
+      getXY(time, moon);
                 
       function getXY(t, obj) {
         var step = 2*Math.PI/obj.period;
 		var x = obj.r * Math.cos(t*step) ^ 0;
         var y = obj.r * Math.sin(t*step) ^ 0;
         var z = x * Math.tan(obj.angle) ^ 0;
-        obj.img.style.transform = 'translate(' + y + 'px, ' + (z) + 'px)';
+        obj.img.style.transform = 'translate(' + y + 'px, ' + (-z) + 'px)';
       }
 
     </script>
