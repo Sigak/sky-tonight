@@ -10,7 +10,7 @@
 </head>
 
 <body>
-<div id="layout">
+<div class="layout">
   <header>
           <h1>Sky-tonight</h1>
           <h3>This will be an educational night sky simulator for children some day...</h3>
@@ -18,12 +18,17 @@
   </header>
   <div id="content">
         <div class="window">
-		<div id="sky">
-		    <div id="moon"></div>
-			<img src="img/stars.jpg"></img>
-		</div>
+			<img class = "north" src="img/stars.jpg"></img>
+			<div class = "south">
+				<div id="moon"></div>
+				<img src="img/south_stars.jpg"></img>
+			</div>
 			<div class="border"></div>
 		</div>
+		<form>
+		Куда смотреть?<br>
+		на Север <span class="switch"><a href="#content"></a><a href="#"></a></span> на Юг
+		</form>
     
   </div>
   <script>
@@ -31,7 +36,7 @@
       var ZERO = new Date(2008, 7, 2);
       var time = (new Date() - ZERO)/86400000 ^ 0;
       var moon = {
-        r: 633,
+        r: 647,
         period: 29.5,
         angle: 0.401,
         img: document.getElementById("moon"),
