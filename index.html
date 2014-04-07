@@ -6,7 +6,7 @@
 <meta name="keywords" content="звезды" />
 <link rel="stylesheet" href="style.css" />
 <link rel="shortcut icon" href="img/favicon.ico" />
-
+    
 </head>
 
 <body>
@@ -17,9 +17,18 @@
             
   </header>
   <div id="content">
-          <div class="window"><img src="img/stars.jpg" id="sky"></img><div class="border"></div></div>
+        <div class="window">
+			<img class = "north" src="img/stars.jpg"></img>
+			<img class = "south" src="img/south_stars.jpg"></img>
+			<div class="border"></div>
+		</div>
+		<form>
+		Куда смотреть?<br>
+		на Север <span class="switch"><a href="#layout"></a><a href="#"></a></span> на Юг
+		</form>
     
   </div>
+  
   <footer>
         <p>Sky-tonight maintained by <a href="https://github.com/Sigak">Sigak</a></p>
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
